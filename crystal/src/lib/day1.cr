@@ -2,6 +2,8 @@
 # 
 # Figure out which elves have the most calories in snacks
 class Day1
+  getter elves : Array(Int32)
+
   def initialize
     @elves = [] of Int32
   end
