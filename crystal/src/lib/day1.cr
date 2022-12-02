@@ -30,6 +30,8 @@ class Day1
 
   def main(filename)
     parse(filename)
+    puts "Day 1:"
+    puts "=" * 40
     puts "Part 1: Most calories: #{most_calories}"
     puts "Part 2: Sum of top 3: #{top_three_sum}"
   end

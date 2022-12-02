@@ -10,19 +10,22 @@
 # 3 points for tie, 6 points for win, 0 points for loss
 # 1 point for playing rock, 2 points for paper, 3 for scissors
 class Day2
-  def sum_rounds(filename)
+  # Sum up all the rounds in a file according to Part 1 rules.
+  def self.sum_rounds(filename)
     File.read_lines(filename).sum do |line|
       score(line[0], line[2])
     end
   end
 
-  def sum_rounds2(filename)
+  # Sum up all the rounds in a file according to Part 2 rules.
+  def self.sum_rounds2(filename)
     File.read_lines(filename).sum do |line|
       score2(line[0], line[2])
     end
   end
 
-  def score(opponent, you)
+  # Score a round using Part 1 rules.
+  def self.score(opponent, you)
     points = case you
     when 'X'
       1
@@ -34,13 +37,13 @@ class Day2
       0
     end
 
-    if (
+    if ( # Tie
       you == 'X' && opponent == 'A' ||
       you == 'Y' && opponent == 'B' ||
       you == 'Z' && opponent == 'C'
     )
       points += 3
-    elsif (
+    elsif ( # Win
       you == 'X' && opponent == 'C' ||
       you == 'Y' && opponent == 'A' ||
       you == 'Z' && opponent == 'B'
@@ -50,7 +53,8 @@ class Day2
     points
   end
 
-  def score2(opponent, outcome)
+  # Score a particular round according to Part 2 rules.
+  def self.score2(opponent, outcome)
     if outcome == 'X' # lose
       if opponent == 'A'
         3 # scissors, lose
@@ -78,7 +82,9 @@ class Day2
     end
   end
   
-  def main(filename)
+  def self.main(filename)
+    puts "Day 2:"
+    puts "=" * 40
     puts "Part 1: #{sum_rounds(filename)}"
     puts "Part 2: #{sum_rounds2(filename)}"
   end
