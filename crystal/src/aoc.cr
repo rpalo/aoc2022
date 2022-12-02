@@ -1,6 +1,7 @@
-# TODO: Write documentation for `Aoc`
-module Aoc
-  VERSION = "0.1.0"
+require "./aoc/day1"
 
-  # TODO: Put your code here
+# Advent of Code
+module Aoc
+  a = Day1.new
+  a.main("data/day1.txt")
 end
