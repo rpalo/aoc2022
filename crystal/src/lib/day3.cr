@@ -4,7 +4,7 @@
 # second half of the line
 # 
 # Part 2: Find the priority of the item shared by each 3 consecutive lines
-class Day3
+module Day3
   PRIORITIES = ('a'..'z').to_a + ('A'..'Z').to_a
 
   def self.priority(c)
@@ -34,8 +34,8 @@ class Day3
 
   def self.main(filename)
     puts "Day 3:"
-    puts "=" * 40
     puts "Part 1: Total misfiled priority scores: #{part1(filename)}"
     puts "Part 2: Total badge priorities: #{part2(filename)}"
+    puts "=" * 40
   end
 end

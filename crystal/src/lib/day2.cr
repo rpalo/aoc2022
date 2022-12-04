@@ -9,7 +9,7 @@
 # 
 # 3 points for tie, 6 points for win, 0 points for loss
 # 1 point for playing rock, 2 points for paper, 3 for scissors
-class Day2
+module Day2
   # Sum up all the rounds in a file according to Part 1 rules.
   def self.sum_rounds(filename)
     File.read_lines(filename).sum do |line|
@@ -84,8 +84,8 @@ class Day2
   
   def self.main(filename)
     puts "Day 2:"
-    puts "=" * 40
     puts "Part 1: #{sum_rounds(filename)}"
     puts "Part 2: #{sum_rounds2(filename)}"
+    puts "=" * 40
   end
 end
