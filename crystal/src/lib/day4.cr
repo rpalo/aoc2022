@@ -3,7 +3,7 @@
 # Part 1: Detect pairs where one is a subset of the other
 # 
 # Part 2: Detect pairs where there is any overlap at all
-class Day4
+module Day4
   # Returns true if either *a* fully contains *b* or *b* fully contains *a*.
   # *a* and *b* are ranges.
   def self.one_fully_contains?(a, b)
