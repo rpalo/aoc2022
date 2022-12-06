@@ -34,6 +34,10 @@ module Day5
     def self.from_file(filename)
       text = File.read(filename)
       initial, instructions = text.split("\n\n")
+
+      # Convert the text stacks into rows instead of columns for easier
+      # handling.  Keep only the (now) rows that start with a number
+      # and then drop the numbers and any trailing blank spaces.
       stacks = initial.lines.map(&.chars).transpose
         .map(&.reverse)
         .select { |row| ('1'..'9').includes?(row[-0]) }
