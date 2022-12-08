@@ -9,4 +9,5 @@ module Aoc
   Day5.main("../data/day5.txt")
   Day6.main("../data/day6.txt")
   Day7.main("../data/day7.txt")
+  Day8.main("../data/day8.txt")
 end
