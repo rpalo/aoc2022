@@ -19,5 +19,7 @@ module Aoc
   # Day15.main("../data/day15.txt")
   # Day16.main("../data/day16.txt")
   # Day17.main("../data/day17.txt")
-  Day18.main("../data/day18.txt")
+  # Day18.main("../data/day18.txt")
+  # Day19.main("../data/day19.txt")
+  Day20.main("../data/day20.txt")
 end
