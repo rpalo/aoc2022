@@ -1,15 +1,15 @@
 require "./spec_helper"
 
-describe Day8 do
+describe Day12 do
   describe "#part1" do
   it "should evaluate the test file right" do
-      Day8.part1("../data/day8_test.txt").should eq(21)
+      Day12.part1("data/day12_test.txt").should eq(31)
     end
   end
 
   describe "#part2" do
     it "should evaluate the test file right" do
-      Day8.part2("../data/day8_test.txt").should eq(8)
+      Day12.part2("data/day12_test.txt").should eq(29)
     end
   end
 end

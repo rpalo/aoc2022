@@ -23,13 +23,13 @@ describe Day2 do
 
   describe "#sum_rounds" do
     it "should add up the test file" do
-      Day2.sum_rounds("../data/day2_test.txt").should eq(15)
+      Day2.sum_rounds("data/day2_test.txt").should eq(15)
     end
   end
 
   describe "#sum_rounds2" do
     it "should add up the test file" do
-      Day2.sum_rounds2("../data/day2_test.txt").should eq(12)
+      Day2.sum_rounds2("data/day2_test.txt").should eq(12)
     end
   end
 end

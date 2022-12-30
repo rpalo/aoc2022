@@ -34,13 +34,13 @@ describe Day13 do
 
   describe "#part1" do
   it "should evaluate the test file right" do
-      Day13.part1("../data/day13_test.txt").should eq(13)
+      Day13.part1("data/day13_test.txt").should eq(13)
     end
   end
 
   describe "#part2" do
     it "should evaluate the test file right" do
-      Day13.part2("../data/day13_test.txt").should eq(140)
+      Day13.part2("data/day13_test.txt").should eq(140)
     end
   end
 end
